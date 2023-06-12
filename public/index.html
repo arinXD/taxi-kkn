@@ -177,6 +177,83 @@
             text-align: left !important;
         }
 
+        .button-pop {
+            font-size: 1em;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease-out;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            transition: opacity 500ms;
+            visibility: hidden;
+            opacity: 0;
+            z-index: 8888;
+        }
+
+        .overlay:target {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .popup {
+            margin: 40px auto 30px auto;
+            padding: 30px;
+            background: #fff;
+            border-radius: 5px;
+            width: 90%;
+            height: 90vh;
+            position: relative;
+            transition: all 2s ease-in-out;
+            overflow: auto;
+
+        }
+
+        .popup img {
+            width: 100%;
+            height: 100%;
+            margin-top: 0;
+            object-fit: cover;
+        }
+
+        .popup h2 {
+            margin-top: 0;
+            color: #333;
+            font-family: Tahoma, Arial, sans-serif;
+        }
+
+        .popup .close {
+            position: absolute;
+            top: 20px;
+            right: 18px;
+            transition: all 200ms;
+            font-size: 40px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .popup .close:hover {
+            color: #06D85F;
+        }
+
+
+        @media screen and (max-width: 700px) {
+            .box {
+                width: 70%;
+            }
+
+            .popup {
+                width: 70%;
+            }
+        }
+
 
         @media only screen and (max-width: 768px) {
             html {
@@ -284,7 +361,7 @@
                                 <div class="meta-category">
                                     <span>Nature</span>
                                 </div>
-                                <a href="post-details.html">
+                                <a class="button-pop" href="#popup1">
                                     <h4>ภูผาม่าน โฮมสเตย์</h4>
                                 </a>
                                 <ul class="post-info">
@@ -506,7 +583,8 @@
                 <!-- Grid container -->
 
                 <!-- Copyright -->
-                <div class="text-center p-3 container d-flex justify-content-center mt-4" style="background-color: white">
+                <div class="text-center p-3 container d-flex justify-content-center mt-4"
+                    style="background-color: white">
                     <a class="text-dark" href="#">All rights reserved@jadoo.co</a>
                 </div>
                 <!-- Copyright -->
@@ -514,28 +592,60 @@
 
             <!-- Footer -->
         </div>
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <a class="close" href="#">&times;</a>
+                <h1 class="text-center my-2">ภูผาม่าน โฮมสเตย์</h1>
+                <img class="content mt-3" src="./assets/images/banner-item-04.jpg" alt="photo">
+                <div class="content my-3 h5 text-justify" style="line-height: 1.6;">
+                    <span style="font-weight: bold;">ภูผาม่านโฮมสเตย์</span> ตั้งอยู่ในอำเภอภูผาม่าน จังหวัดขอนแก่น
+                    ห่างจากตัวเมืองขอนแก่นใช้เวลาเดินทางประมาณ 2
+                    ชั่วโมง หากเดินทางมาจากกรุงเทพใช้เวลาเกือบ 7 ชั่วโมง
+                    ระยะเวลาในการเดินทางถือว่าใช้เวลาไม่น้อยเลยทีเดียวค่ะ
+                    แต่เชื่อเถอะมาถึงแล้วหายเหนื่อยกับภาพที่ได้เห็นตรงหน้า ที่พักที่ตั้งอยู่กลางทุ่งนา
+                    วิวข้างหลังคือภูเขาหินปูนของภูผาม่าน พร้อมด้วยสะพานไม้ไผ่ที่ทอดยาว ในยามเช้าช่วงที่ฝนตกใหม่ๆ
+                    เราจะได้เห็นภาพสายหมอกบางลอยผ่านภูเขาแบบนี้ อากาศสดชื่นเย็นสบาย
+                </div>
+                <img class="content mt-3" src="./photo/viewpu2.jpg" alt="photo">
+                <img class="content mt-3" src="./photo/viewpu3.jpg" alt="photo">
+                <div class="content my-3 h5 text-justify" style="line-height: 1.6;">
+                    ห้องพักของภูผาม่าน โฮมสเตย์ มีทั้งหมด 4 แบบ คือ กระท่อมริมทุ่ง มีทั้งหมด 3 หลัง พักได้หลังละ 2 ท่าน
+                    ราคาหลังละ 1000 บาท (พร้อมอาหารเช้า) ภายในห้องพักเป็นห้องแอร์ มีที่นอน ตู้เย็น ชา กาแฟ
+                    และที่นั่งริมระเบียงด้านนอกบ้าน แต่ไม่ได้มีห้องน้ำในตัว เป็นห้องน้ำรวมแยกชายหญิง ที่ตั่งอยู่ด้านนอก
+                    ภายในห้องน้ำค่อนข้างสะอาดและมีเครื่องทำน้ำอุ่น เราเลือกพักแบบกระท่อมริมทุ่งค่ะ
+                </div>
+                <img class="content mt-3" src="./photo/viewpu4.jpg" alt="photo">
+                <img class="content mt-3" src="./photo/viewpu5.jpg" alt="photo">
+                <div class="content my-3 h5 text-justify" style="line-height: 1.6;">
+                    <span style="font-weight: bold;">ภูผาม่านโฮมสเตย์</span> อีกหนึ่งที่พักขอนแก่นที่มาแรงในขณะนี้
+                    แวะมาที่นี่จะได้พบกับบรรยากาศที่คล้ายคลึงกับภาคเหนือ เหมือนที่พักแบบตูบในเมืองน่าน
+                    แถมยังสภาพแวดล้อมยังมีความบริสุทธิ์มาก อำเภอภูผาม่านยังมีที่เที่ยวและคาเฟ่สวยหลายแห่งให้แวะ
+                    สำหรับใครที่ต้องการติดต่อจองที่พัก สามารถเข้าไปจองได้ที่เพจของที่พัก ภูผาม่าน โฮมสเตย์ หรือ โทร 084
+                    798 6009
+                </div>
 
-    </div><!-- main div -->
+            </div>
+        </div><!-- main div -->
 
-    <div class="box-sha">
-        <img class="imgphone" src="./photo/icons8-phone-100 (1).png" alt="phone">
-    </div>
+        <div class="box-sha">
+            <img class="imgphone" src="./photo/icons8-phone-100 (1).png" alt="phone">
+        </div>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Additional Scripts -->
-    <script src="assets/js/owl.js"></script>
-    <script src="assets/js/custom.js"></script>
+        <!-- Additional Scripts -->
+        <script src="assets/js/owl.js"></script>
+        <script src="assets/js/custom.js"></script>
 
-    <!----Custom JS File--->
-    <script>
-        window.addEventListener('scroll', function () {
-            var header = document.querySelector('.header');
-            header.classList.toggle("sticky", window.scrollY > 0);
-        })
-    </script>
+        <!----Custom JS File--->
+        <script>
+            window.addEventListener('scroll', function () {
+                var header = document.querySelector('.header');
+                header.classList.toggle("sticky", window.scrollY > 0);
+            })
+        </script>
 </body>
 
 </html>
