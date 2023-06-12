@@ -1,0 +1,53 @@
+.destination{
+    padding: 50px 160px;
+}
+.destination>p, .destination>h2{
+    text-align: center;
+}
+.destination h2{
+    padding-top: 0.5em;
+    font-weight: bold;
+}
+.destination-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    margin-top: 60px;
+    grid-gap: 0px 50px;
+}
+.destination-item{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 24px;
+    /* width: 314px; */
+}
+.destination-item>img{
+    width: 100%;
+    object-fit: cover;
+    height: 320px;
+    border-radius: 24px 24px 0px 0px;
+}
+.destination-item .send-img{
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
+}
+
+.destination-item .item-info{
+    padding: 27px 20px;
+}
+.destination-item .item-title{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    color: rgb(61, 61, 61);
+    font-size: 1em;
+    padding-bottom: 19px;
+}
+.destination-item .item-info a img{
+    margin-right: 14px;
+    font-size: 16px;
+}
+.destination-item .item-info a{
+    color: black;
+    text-decoration: none;
+}
