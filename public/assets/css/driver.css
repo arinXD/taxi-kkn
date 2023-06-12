@@ -1,0 +1,142 @@
+.driver {
+    padding: 50px;
+}
+
+.driver header {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.driver header h1 {
+    margin: 0;
+    padding: 0;
+    margin: auto 50px auto 0;
+    height: fit-content;
+}
+
+.driver header .search {
+    display: flex;
+    justify-content: center;
+}
+
+.driver header .search input {
+    display: inline-block;
+    margin: 0 auto;
+    font-size: 16px;
+    width: 35em;
+    border: 0;
+    border-bottom: 1px solid black;
+    margin-right: 15px;
+
+}
+
+.driver header .search input:focus {
+    border-bottom: 1px solid #F1A501;
+    outline: 0;
+}
+
+.driver header .search button {
+    background-color: #F1A501;
+    border: none;
+    color: white;
+    padding: 1em 1.5em;
+    font-size: .9em;
+    border-radius: 1.5em;
+}
+
+.driver header .search button i {
+    margin-right: 1em;
+}
+
+.driver .driver-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 40px;
+}
+
+.driver .driver-list .driver-item {
+    background-color: white;
+    position: relative;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 1.5em;
+    padding: .8em;
+}
+
+.driver .driver-list .driver-item .head {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: fit-content(8ch) 1fr;
+    column-gap: 16px;
+    background-color: #e9eaf5a2;
+    padding: 1em;
+    border-radius: 1.2em;
+}
+
+.driver .driver-list .driver-item .head img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.driver .driver-list .driver-item .head p {
+    margin: 0;
+    padding: 0;
+    color: #504d4d;
+}
+
+.driver .driver-list .driver-item .head .name span {
+    display: block;
+    font-weight: bold;
+    color: black;
+    font-size: 1.05em;
+    margin-bottom: .8em;
+}
+
+.driver .driver-list .driver-item .body{
+    padding: 16px;
+}
+.driver .driver-list .driver-item .body ul,
+.driver .driver-list .driver-item .body p {
+    padding: 0;
+    margin: 0;
+}
+.driver .driver-list .driver-item .body ul{
+    display: flex;
+    list-style-type: none;
+    gap: 1.25em 1.25em; /* ⇳ and ⬄ */
+    margin-bottom: 16px;
+
+}
+.driver .driver-list .driver-item .body ul li{
+    padding: .3em .8em;
+    box-shadow: rgba(116, 116, 116, 0.178) 0px 0px 0px 1px;
+    border-radius: 1.25em;
+    font-weight: bold;
+    
+}
+.driver .driver-list .driver-item .body ul li.finance{
+    color: rgb(0, 255, 21);
+    
+}
+.driver .driver-list .driver-item .body ul li.game{
+    color: salmon;
+    
+}
+.driver .driver-list .driver-item .body p{
+    color: #868686;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 16px;
+}
+.driver .driver-list .driver-item .body p span{
+    color: #000000;
+}
+.driver .driver-list .driver-item .footer{
+    padding: 0 16px .5em;
+    font-weight: bold;
+    color: #00B2FF;
+}
+.driver .driver-list .driver-item .footer i{
+    margin-right: 1em;
+}

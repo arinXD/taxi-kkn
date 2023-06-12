@@ -63,6 +63,7 @@
   width: 100%;
   filter: brightness(55%);
   height: 324.1px;
+  object-fit: cover;
 }
 
 .owl-carousel .owl-nav.disabled,
