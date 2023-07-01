@@ -2,24 +2,24 @@
     padding: 50px 160px;
 }
 
-.driver .header {
+.driver .headers {
     display: flex;
     margin-bottom: 60px;
 }
 
-.driver .header h1 {
+.driver .headers h1 {
     margin: 0;
     padding: 0;
     margin: auto 50px auto 0;
     height: fit-content;
 }
 
-.driver .header .search {
+.driver .headers .search {
     display: flex;
     justify-content: center;
 }
 
-.driver .header .search input {
+.driver .headers .search input {
     display: inline-block;
     margin: 0 auto;
     font-size: 16px;
@@ -30,12 +30,12 @@
 
 }
 
-.driver .header .search input:focus {
+.driver .headers .search input:focus {
     border-bottom: 1px solid #F1A501;
     outline: 0;
 }
 
-.driver .header .search button {
+.driver .headers .search button {
     background-color: #F1A501;
     border: none;
     color: white;
@@ -44,7 +44,7 @@
     border-radius: 1.5em;
 }
 
-.driver .header .search button i {
+.driver .headers .search button i {
     margin-right: 1em;
 }
 
