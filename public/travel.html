@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Icon font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-stand-blog.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/card.css">
+    <link rel="stylesheet" href="assets/css/guide.css">
+    <link rel="stylesheet" href="./assets/css/driver.css">
+    <link rel="stylesheet" href="./assets/css/driver_styles.css">
+
+    <title>Taxikkn</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700;800&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .banner {
+            width: 100%;
+            height: 100vh;
+            background-image: url(./photo/viewMain.jpg);
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            z-index: 1;
+
+        }
+
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 100px;
+            background-color: #F1A501;
+            /* border-bottom: 1px solid rgba(235, 235, 235, 0.5);*/
+            transition: 0.6s;
+        }
+
+        nav .logo {
+            font-size: 32px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #fff;
+            transition: 0.6s;
+        }
+
+        nav ul li {
+            list-style: none;
+            display: inline-block;
+            padding: 8px 12px;
+            transition: 0.6s;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 500;
+            transition: .3s;
+        }
+
+        nav ul li a:hover {
+            color: #000;
+        }
+
+        .header.sticky {
+            background: #fff;
+            position: fixed;
+            width: 100%;
+            padding: 10px 80px;
+            align-items: center;
+            transition: all 0.4s ease;
+            box-shadow: 0px 1px 15px rgb(0 0 0 / 10%);
+            z-index: 999;
+        }
+
+        .header.sticky .logo {
+            color: #F1A501;
+        }
+
+        .header.sticky ul li a {
+            color: #333;
+        }
+
+        .header.sticky ul li a:hover {
+            color: #F1A501;
+        }
+
+        #hero {
+            margin-top: -5rem;
+            height: 100vh;
+            width: 100%;
+            background: url("./photo/bg.jpg")no-repeat cover;
+            color: whitesmoke;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner">
+        <nav class="header">
+            <a href="#" class="logo">TAXIKKN</a>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="./testDatabse.html">about</a></li>
+                <li><a href="#">service</a></li>
+                <li><a href="#">portfolio</a></li>
+                <li><a href="#">team</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+        <section id="hero"></section>
+        <div class="container">
+            <div class="row">
+                <div class="text-center py-5 col-12">
+                    <h2>
+                        ภูผาม่าน โฮมสเตย์ ขอนแก่น
+                    </h2>
+                </div>
+                <div class="py-2 col-12">
+                    <p class="text-dark lh-lg" style="text-indent: 50px;">
+                        อยากพักผ่อนยังที่พักวิวกลางทุ่งนา มีฉากหลังเป็นภูเขาหินปูนที่สวยงาม ไม่ต้องไปถึงภาคเหนือ
+                        เพราะขอนแก่นเมืองอีสานบ้านเรามีที่พักสุดฟิน “<span class="fw-bold">ภูผาม่าน โฮมสเตย์</span>”
+                        ที่พักบรรยากาศดีที่ซุกซ่อนตัวอยู่ในอำเภอภูผาม่าน อำเภอที่ยังคงมีความบริสุทธิ์ของธรรมชาติ
+                        รายล้อมด้วยเทือกเขาหินปูนที่สวยงาม พื้นที่ภายในที่พักยังมีคาเฟ่ตกแต่งแบบโมเดิร์นมองเห็นวิวภูเขา
+                        กระท่อมกลางนาสำหรับนั่งทานอาหาร และสะพานไม้ไผ่กลางทุ่งให้เดินเล่นถ่ายภาพ
+                        ยามเช้ายังได้ชมสายหมอกบางที่ลอยคลอเคลียตามหุบเขา ครบ จบ ฟินขนาดนี้ ไม่มาคงไม่ได้แล้ว
+                    </p>
+                    <img src="./photo/viewpu2.jpg" alt="" class="rounded mx-auto d-block py-4"
+                        style="height:351pt; width:467.25pt">
+                    <p class="text-dark lh-lg" style="text-indent: 50px;">
+                        <span class="fw-bold">ภูผาม่าน โฮมสเตย์</span>ตั้งอยู่ในอำเภอภูผาม่าน จังหวัดขอนแก่น
+                        ห่างจากตัวเมืองขอนแก่นใช้เวลาเดินทางประมาณ 2 ชั่วโมง หากเดินทางมาจากกรุงเทพใช้เวลาเกือบ 7
+                        ชั่วโมง ระยะเวลาในการเดินทางถือว่าใช้เวลาไม่น้อยเลยทีเดียวค่ะ
+                        แต่เชื่อเถอะมาถึงแล้วหายเหนื่อยกับภาพที่ได้เห็นตรงหน้า ที่พักที่ตั้งอยู่กลางทุ่งนา
+                        วิวข้างหลังคือภูเขาหินปูนของภูผาม่าน พร้อมด้วยสะพานไม้ไผ่ที่ทอดยาว ในยามเช้าช่วงที่ฝนตกใหม่ๆ
+                        เราจะได้เห็นภาพสายหมอกบางลอยผ่านภูเขาแบบนี้ อากาศสดชื่นเย็นสบาย
+                    </p>
+                    <img src="./photo/viewpu3.jpg" alt="" class="rounded mx-auto d-block py-4"
+                        style="height:351pt; width:467.25pt">
+                    <img src="./photo/viewpu4.jpg" alt="" class="rounded mx-auto d-block py-4"
+                        style="height:351pt; width:467.25pt">
+                    <p class="text-dark lh-lg" style="text-indent: 50px;">
+                        ส่วนใครที่ไม่ได้พัก สามารถแวะมาเที่ยวจิบเครื่องดื่ม ทานอาหาร ชมวิวถ่ายภาพรูปได้
+                        มีคาเฟ่และร้านขายส้มตำเล็กๆตั้งอยู่ด้านหน้า คาเฟ่ตกแต่งในโทนสีดำแบบโมเดิร์น์นิดๆ
+                        บรรยากาศดีอยู่ริมทุ่งนา คาเฟ่มีสองชั้น ชั้นล่างเป็นแบบห้องแอร์ มีที่นั่งเอาท์ดอร์รับลมด้านนอก
+                        ส่วนชั้นสองเป็นที่นั่งริมระเบียงที่สามารถมองเห็นวิวของเทือกเขาหินปูนและที่พักได้แบบชัดเจน
+                        คาเฟ่เน้นให้บริการเครื่องดื่มและของหวานเป็นหลัก
+                    </p>
+                    <img src="./photo/viewpu5.jpg" alt="" class="rounded mx-auto d-block py-4"
+                        style="height:351pt; width:467.25pt">
+                    <img src="./photo/viewpu6.jpg" alt="" class="rounded mx-auto d-block py-4"
+                        style="height:351pt; width:467.25pt">
+                    <p class="text-dark lh-lg" style="text-indent: 50px;">
+                        <span class="fw-bold">ภูผาม่าน โฮมสเตย์</span> อีกหนึ่งที่พักขอนแก่นที่มาแรงในขณะนี้
+                        แวะมาที่นี่จะได้พบกับบรรยากาศที่คล้ายคลึงกับภาคเหนือ เหมือนที่พักแบบตูบในเมืองน่าน
+                        แถมยังสภาพแวดล้อมยังมีความบริสุทธิ์มาก อำเภอภูผาม่านยังมีที่เที่ยวและคาเฟ่สวยหลายแห่งให้แวะ
+                        สำหรับใครที่ต้องการติดต่อจองที่พัก สามารถเข้าไปจองได้ที่เพจของที่พัก ภูผาม่าน โฮมสเตย์ หรือ โทร
+                        084 798 6009
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+        <hr class="py-2">
+    </div>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            var header = document.querySelector('.header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+</body>
+
+</html>
